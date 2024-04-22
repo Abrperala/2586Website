@@ -4,15 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Copperbots 2586-Sponsors</title>
+    <link rel="stylesheet" href="../styles\index.css" />
+    <script>
+      // Function to include the navbar HTML file
+      function includeNavbar() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Inject navbar content into the placeholder element
+              document.getElementById("navbar-placeholder").innerHTML =
+                xhr.responseText;
+            } else {
+              console.error("Failed to fetch navbar content: " + xhr.status);
+            }
+          }
+        };
+        xhr.open("GET", "navbar.html", true);
+        xhr.send();
+      }
+
+      // Call the function to include the navbar
+      includeNavbar();
+    </script>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="about-us.html">About Us</a>
-      <a href="sponsors.html">Sponsors</a>
-      <a href="community.html">Community</a>
-    </nav>
+    <!-- Placeholder for navbar content -->
+    <div id="navbar-placeholder"></div>
+
     <h1>Sponsors</h1>
   </body>
 </html>

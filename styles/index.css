@@ -2,6 +2,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #252424; /* Light gray background color */
+  color: #ddd;
+}
+
+img {
+  display: block; /* Set display to block to enable margin auto */
+  max-width: 100%; /* Ensure the image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 header {
@@ -24,6 +33,13 @@ header {
 }
 .logo-right {
   background-color: #b87333; /* Adjust the color as needed */
+  padding: 5px; /* Padding around the logo */
+  border-radius: 50%; /* Make the container a circle */
+  width: 100px; /* Adjust width to make the circle */
+  height: 100px; /* Adjust height to make the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -48,4 +64,13 @@ header {
 .navbar a.active {
   background-color: #4caf50;
   color: white;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  background-color: #0a0200;
 }
