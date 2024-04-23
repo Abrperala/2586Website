@@ -33,5 +33,31 @@
     <div id="navbar-placeholder"></div>
 
     <h1>About Us</h1>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // Function to include the footer HTML file
+      function includeFooter() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Inject footer content into the placeholder element
+              document.getElementById("footer-placeholder").innerHTML =
+                xhr.responseText;
+            } else {
+              console.error("Failed to fetch footer content: " + xhr.status);
+            }
+          }
+        };
+        xhr.open("GET", "footer.html", true);
+        xhr.send();
+      }
+
+      // Call the function to include the footer
+      includeFooter();
+    </script>
   </body>
 </html>
