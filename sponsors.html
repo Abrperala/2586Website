@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copperbots 2586-Sponsors</title>
+    <link rel="stylesheet" href="../styles\index.css" />
+    <script>
+      // Function to include the navbar HTML file
+      function includeNavbar() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Inject navbar content into the placeholder element
+              document.getElementById("navbar-placeholder").innerHTML =
+                xhr.responseText;
+            } else {
+              console.error("Failed to fetch navbar content: " + xhr.status);
+            }
+          }
+        };
+        xhr.open("GET", "navbar.html", true);
+        xhr.send();
+      }
+
+      // Call the function to include the navbar
+      includeNavbar();
+    </script>
+  </head>
+  <body>
+    <!-- Placeholder for navbar content -->
+    <div id="navbar-placeholder"></div>
+
+    <h1>Sponsors</h1>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // Function to include the footer HTML file
+      function includeFooter() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Inject footer content into the placeholder element
+              document.getElementById("footer-placeholder").innerHTML =
+                xhr.responseText;
+            } else {
+              console.error("Failed to fetch footer content: " + xhr.status);
+            }
+          }
+        };
+        xhr.open("GET", "footer.html", true);
+        xhr.send();
+      }
+
+      // Call the function to include the footer
+      includeFooter();
+    </script>
+  </body>
+</html>
