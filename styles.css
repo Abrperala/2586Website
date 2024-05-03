@@ -3,44 +3,63 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #252424; /* Light gray background color */
+  background-color: #252424;
+  /* Light gray background color */
   color: #ddd;
 }
 
 /* Image styles */
 .team-picture {
-  display: block; /* Set display to block to enable margin auto */
-  max-width: 100%; /* Ensure the image doesn't exceed container width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image horizontally */
+  display: block;
+  /* Set display to block to enable margin auto */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed container width */
+  height: auto;
+  /* Maintain aspect ratio */
+  width: 50%;
+  margin: 0 auto;
+  /* Center the image horizontally */
 }
 
 /* Header styles */
 header {
-  background-color: #0a0200; /* Background color for the header */
+  background-color: #0a0200;
+  /* Background color for the header */
   display: flex;
-  justify-content: space-between; /* Logos will be spaced evenly */
-  align-items: center; /* Vertically center the logos */
-  padding: 10px 20px; /* Adjust padding as needed */
+  justify-content: space-between;
+  /* Logos will be spaced evenly */
+  align-items: center;
+  /* Vertically center the logos */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
 }
 
 .logo-left img,
 .logo-right img {
-  max-height: 90px; /* Adjust height as needed */
-  padding: 5px; /* Add padding to create space around the logo */
+  max-height: 90px;
+  /* Adjust height as needed */
+  padding: 5px;
+  /* Add padding to create space around the logo */
 }
 
 .logo-right img {
-  max-height: 100px; /* Adjust the maximum height as needed */
-  width: auto; /* Allow the width to adjust proportionally */
+  max-height: 100px;
+  /* Adjust the maximum height as needed */
+  width: auto;
+  /* Allow the width to adjust proportionally */
 }
 
 .logo-right {
-  background-color: #b87333; /* Adjust the color as needed */
-  padding: 5px; /* Padding around the logo */
-  border-radius: 50%; /* Make the container a circle */
-  width: 100px; /* Adjust width to make the circle */
-  height: 100px; /* Adjust height to make the circle */
+  background-color: #b87333;
+  /* Adjust the color as needed */
+  padding: 5px;
+  /* Padding around the logo */
+  border-radius: 50%;
+  /* Make the container a circle */
+  width: 100px;
+  /* Adjust width to make the circle */
+  height: 100px;
+  /* Adjust height to make the circle */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,10 +74,11 @@ header {
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #b87333;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  font-family: fantasy;
 }
 
 .navbar a:hover {
@@ -74,11 +94,31 @@ header {
 /* Footer styles */
 footer {
   background-color: #0a0200;
-  padding: 20px; /* Add padding to the footer */
+  padding: 20px;
+  /* Add padding to the footer */
 }
 
 .footer-logo {
-  float: right; /* Align the logo to the right */
-  width: 200px; /* Set the width of the logo */
-  height: auto; /* Maintain aspect ratio */
+  float: right;
+  /* Align the logo to the right */
+  width: 200px;
+  /* Set the width of the logo */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.start {
+  font-size: x-large;
+  font: bold;
+  font-family: fantasy;
+  text-align: left;
+  color: #b87333;
+
+}
+
+.paragraph {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd;
+  font-size: small;
+  text-align: center;
 }
