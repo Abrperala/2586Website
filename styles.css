@@ -122,3 +122,8 @@ footer {
   font-size: small;
   text-align: center;
 }
+
+.about {
+  color: #ddd;
+  font-family: Arial, sans-serif;
+}
